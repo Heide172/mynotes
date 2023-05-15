@@ -1,19 +1,26 @@
-'use client'
+"use client"
 import { useState } from "react"
+import { useRouter } from 'next/navigation';
 import { supabase } from '../../supabaseClient';
 
 export default function CreateNote()
 {
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
+    const router = useRouter();
 
     const create = async() => {
     
-        await supabase.from('notes').upsert({title:title, content:content}).select()}
+        await supabase.from('notes').upsert({title:title, content:content}).select()
+        setContent('');
+        setTitle('');
+    
+        router.refresh();
+    }
 
-    return (
+    return(
     <form onSubmit={create}>
-      <h3>Create a new Note</h3>
+      <h3>Create a new note</h3>
       <input
         type="text"
         placeholder="Title"

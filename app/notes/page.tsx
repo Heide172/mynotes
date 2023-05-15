@@ -5,8 +5,6 @@ import CreateNote from './[id]/CreateNote';
 
 async function getNotes() {
     const { data, error } = await supabase.from('notes').select()
- //  {cache: "no store"} 
- // return JSON.stringify({ data }, null, 2)}
     return data}
     
 
@@ -14,15 +12,16 @@ async function getNotes() {
 export default async function NotesPage() {
     const notes = await getNotes()
     return(
-        <div>
-            <h1>Notes</h1>
-            <div>
-               {notes?.map((note) => {
+      <div>
+      <h1>Notes</h1>
+      <div className={styles.grid}>
+        {notes?.map((note) => {
           return <Note key={note.id} note={note} />;
         })}
-            </div>
-            <CreateNote/>
-        </div>
+      </div>
+
+      <CreateNote />
+    </div>
     )
 }
 
