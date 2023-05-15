@@ -747,7 +747,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/notes/page:static/chunks/app/notes/page.js"
         ],
         "async": false
       },
@@ -755,7 +755,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/notes/page:static/chunks/app/notes/page.js"
         ],
         "async": false
       },
@@ -763,7 +763,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/notes/page:static/chunks/app/notes/page.js"
         ],
         "async": false
       }
@@ -771,11 +771,14 @@
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
+    "/Users/arturtonyan/repos/mynotes-NextJS/app/layout": [
+      "static/css/app/layout.css"
+    ],
     "/Users/arturtonyan/repos/mynotes-NextJS/app/notes/page": [
       "static/css/app/notes/page.css"
     ],
-    "/Users/arturtonyan/repos/mynotes-NextJS/app/layout": [
-      "static/css/app/layout.css"
+    "/Users/arturtonyan/repos/mynotes-NextJS/app/notes/[id]/page": [
+      "static/css/app/notes/[id]/page.css"
     ]
   },
   "clientModules": {
@@ -2475,61 +2478,6 @@
       ],
       "async": false
     },
-    "/Users/arturtonyan/repos/mynotes-NextJS/app/notes/Notes.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/notes/page.css"
-      ]
-    },
-    "/Users/arturtonyan/repos/mynotes-NextJS/node_modules/next/dist/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/arturtonyan/repos/mynotes-NextJS/node_modules/next/dist/esm/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/arturtonyan/repos/mynotes-NextJS/node_modules/next/dist/client/link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/arturtonyan/repos/mynotes-NextJS/node_modules/next/dist/esm/client/link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/arturtonyan/repos/mynotes-NextJS/node_modules/next/dist/client/link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/arturtonyan/repos/mynotes-NextJS/node_modules/next/dist/esm/client/link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
     "/Users/arturtonyan/repos/mynotes-NextJS/app/globals.css#": {
       "id": "null",
       "name": "default",
@@ -2542,6 +2490,62 @@
       "name": "default",
       "chunks": [
         "static/css/app/layout.css"
+      ]
+    },
+    "/Users/arturtonyan/repos/mynotes-NextJS/node_modules/next/dist/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/notes/page:static/chunks/app/notes/page.js"
+      ],
+      "async": false
+    },
+    "/Users/arturtonyan/repos/mynotes-NextJS/node_modules/next/dist/esm/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/notes/page:static/chunks/app/notes/page.js"
+      ],
+      "async": false
+    },
+    "/Users/arturtonyan/repos/mynotes-NextJS/node_modules/next/dist/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/notes/page:static/chunks/app/notes/page.js"
+      ],
+      "async": false
+    },
+    "/Users/arturtonyan/repos/mynotes-NextJS/node_modules/next/dist/esm/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/notes/page:static/chunks/app/notes/page.js"
+      ],
+      "async": false
+    },
+    "/Users/arturtonyan/repos/mynotes-NextJS/node_modules/next/dist/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/notes/page:static/chunks/app/notes/page.js"
+      ],
+      "async": false
+    },
+    "/Users/arturtonyan/repos/mynotes-NextJS/node_modules/next/dist/esm/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/notes/page:static/chunks/app/notes/page.js"
+      ],
+      "async": false
+    },
+    "/Users/arturtonyan/repos/mynotes-NextJS/app/notes/Notes.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/notes/page.css",
+        "static/css/app/notes/[id]/page.css"
       ]
     }
   }
