@@ -1,0 +1,70 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./app/notes/Notes.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.Notes_pageTitle__ZJY7q {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+  }
+  
+  .Notes_grid__rDADY {
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 1000px;
+  }
+  
+  .Notes_action__xwOg_ {
+    text-align: left;
+    color: dodgerblue;
+  }
+  
+  .Notes_note__7PXox {
+    height: auto;
+    width: 200px;
+    padding: 0.2rem 1rem;
+    margin: 0.5rem;
+    background: #ffff00;
+    box-shadow: 4px 4px 8px 1px #00000075;
+    border-radius: 2px;
+  }
+  
+  .Notes_container__v3B2V {
+    padding: 0 2rem;
+  }
+  
+  .Notes_pageTitle__ZJY7q {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 3rem;
+  }
+  
+  .Notes_note__7PXox {
+    height: auto;
+    width: 200px;
+    padding: 0.25rem;
+    border-radius: 2px;
+  }
+  
+  .Notes_title__I32tm {
+    padding: 0.1rem;
+    font-size: 1rem;
+  }
+  
+  .Notes_content__wFgTw {
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+  
+  .Notes_created__mv7c8 {
+    font-size: 0.7rem;
+    font-weight: lighter;
+  }
+  
+  .Notes_action__xwOg_ {
+    text-align: left;
+    color: dodgerblue;
+  }
+  
